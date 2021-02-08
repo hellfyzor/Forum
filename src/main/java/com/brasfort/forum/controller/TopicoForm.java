@@ -2,12 +2,21 @@ package com.brasfort.forum.controller;
 
 import com.brasfort.forum.modelo.Curso;
 import com.brasfort.forum.modelo.Topico;
-import com.brasfort.forum.repository.TopicoRepository;
+import com.sun.istack.NotNull;
+import org.springframework.validation.annotation.Validated;
 
+import javax.validation.constraints.NotEmpty;
+
+@Validated
 public class TopicoForm {
 
+    @NotNull
+    @NotEmpty
     private String titulo;
+
+    @NotNull @NotEmpty
     private String mensagem;
+
     private String nomeCurso;
 
     public String getTitulo() {
