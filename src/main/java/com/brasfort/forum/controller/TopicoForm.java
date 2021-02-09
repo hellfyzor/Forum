@@ -2,6 +2,7 @@ package com.brasfort.forum.controller;
 
 import com.brasfort.forum.modelo.Curso;
 import com.brasfort.forum.modelo.Topico;
+import com.brasfort.forum.repository.CursoRepository;
 import com.sun.istack.NotNull;
 import org.springframework.validation.annotation.Validated;
 
